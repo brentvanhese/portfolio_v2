@@ -438,4 +438,15 @@ input[type=submit]:hover {
   .card img{
     max-width: 280px;
   }
+
+  .container-contactform{
+    width: 250px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container-contactform{
+    width: 200px !important;
+  }
+  
 }
