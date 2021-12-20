@@ -11,10 +11,10 @@
   <pre>
 <?php
 echo
-'Voornaam: ' . htmlspecialchars($_POST["vnaam"]) . "\n" .
-'Familienaam: ' . htmlspecialchars($_POST["anaam"]) . "\n" .
-'E-mail: ' . htmlspecialchars($_POST["mail"]) . "\n" .
-'Vraag: ' . htmlspecialchars($_POST["vraag"]);
+'Voornaam: ' . htmlspecialchars($_POST["firstname"]) . "\n" .
+'Familienaam: ' . htmlspecialchars($_POST["lastname"]) . "\n" .
+'E-mail: ' . htmlspecialchars($_POST["emailAdress"]) . "\n" .
+'Vraag: ' . htmlspecialchars($_POST["subject"]);
 ?>
   </pre>
 </body>
