@@ -67,7 +67,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2021 Brent Van Hese | <a href="../index.html">Home</a> <a href="../over-mij.html">Over mij</a> <a href="../projecten.html">Projecten</a> <a href="../werkplekleren.html">Werkplekleren</a> <a href="../contact.html">Contacteer mij</a></p>
+        <p>&copy; <span id="copyright"></span> Brent Van Hese | <a href="../index.html">Home</a> <a href="../over-mij.html">Over mij</a> <a href="../projecten.html">Projecten</a> <a href="../werkplekleren.html">Werkplekleren</a> <a href="../contact.html">Contacteer mij</a></p>
     </footer>
 </body>
 <script>
@@ -79,7 +79,7 @@
             x.className = "topnav";
         }
     }
-    
+
     var slideIndex = 1;
     showSlides(slideIndex);
 
@@ -108,5 +108,7 @@
         slides[slideIndex-1].style.display = "block";
         dots[slideIndex-1].className += " active_photo";
     }
+
+    document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
 </script>
 </html>
