@@ -392,6 +392,22 @@ input[type=submit]:hover {
   html{
     margin: 0 5px;
   }
+
+  .index{
+    display: grid;
+    grid-template-areas: 
+    "photo"
+    "info"
+    "wieBenIk"
+    "mijnWerk"
+    "cv"
+    ;
+    grid-template-columns: auto;
+  }
+
+  .photo{
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 650px) {
