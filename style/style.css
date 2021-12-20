@@ -114,6 +114,40 @@ ul.breadcrumb {
 
 
 
+/*index*/
+.index{
+  display: grid;
+  grid-template-areas: 
+  "photo info"
+  "wieBenIk wieBenIk"
+  "mijnWerk mijnWerk"
+  "cv cv"
+  ;
+  grid-template-columns: 160px auto;
+}
+
+.photo{
+  grid-area: photo;
+}
+
+.info{
+  grid-area: info;
+}
+
+.wieBenIk{
+  grid-area: wieBenIk;
+}
+
+.mijnWerk{
+  grid-area: mijnWerk;
+}
+
+.cv{
+ grid-area: cv;
+}
+
+
+
 /*contact*/
 
 /* Style inputs with type="text", select elements and textareas */
