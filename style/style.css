@@ -1,13 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500&display=swap');
+
 /*algemene css*/
 html{
     font-family: "Source Sans Pro", Arial, "Helvetica Neue", Helvetoca, sans-serif;
     font-size: 18px;
     background-color: #E8EAE3;
     color: #373833;
+    font-family: 'Arima Madurai', cursive;
 }
 
 a{
   color: #e71632;
+}
+
+h1{
+  font-family: 'Oooh Baby', cursive;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  color: #e71632;
+}
+
+.subtitle{
+  font-family: 'Oooh Baby', cursive;
+  padding-top: 0;
+  margin-top: 0;
+  color: #373833;
 }
 
 
