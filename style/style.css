@@ -13,6 +13,12 @@ html{
 
 a{
   color: #e71632;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #b8031b;
+  text-decoration: underline;
 }
 
 h1{
@@ -27,6 +33,7 @@ h1{
   padding-top: 0;
   margin-top: 0;
   color: #373833;
+  font-weight: 1000;
 }
 
 footer{
@@ -60,13 +67,13 @@ ul.breadcrumb {
   
   /* Add a color to all links inside the list */
   ul.breadcrumb li a {
-    color: #0275d8;
+    color: #e71632;
     text-decoration: none;
   }
   
   /* Add a color on mouse-over */
   ul.breadcrumb li a:hover {
-    color: #01447e;
+    color: #b8031b;
     text-decoration: underline;
   }
 
@@ -352,7 +359,6 @@ input[type=submit]:hover {
 
 
 /*media querie's**/
-
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child){
     display: none;
@@ -404,7 +410,7 @@ input[type=submit]:hover {
   }
 
   html{
-    margin: 0 200px;
+    margin: 0 100px;
   }
 }
 
