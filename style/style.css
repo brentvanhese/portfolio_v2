@@ -234,6 +234,7 @@ input[type=submit]:hover {
 /*werkplekleren*/
 .center h3{
   text-align: center;
+  color: #e71632;
 }
 
 .center img{
