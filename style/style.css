@@ -355,6 +355,50 @@ input[type=submit]:hover {
 
 
 
+/*detailpagina console-game*/
+.console-game{
+  display: grid;
+  grid-template-areas: 
+  "idee idee idee"
+  "samengevat samengevat samengevat"
+  "win-verlies win-verlies win-verlies"
+  "rooms attributen random"
+  ;
+  grid-template-columns: auto auto auto;
+}
+
+.idee{
+  grid-area: idee;
+}
+
+.samengevat{
+  grid-area: samengevat;
+}
+
+.win-verlies{
+  grid-area: win-verlies;
+}
+
+.rooms{
+  grid-area: rooms;
+  padding: 25px 25px;
+  margin-left: 50px;
+  margin-right: 25px;
+}
+
+
+.attributen{
+  grid-area: attributen;
+  padding: 25px 25px;
+  margin: 0 25px;
+}
+
+.random{
+  grid-area: random;
+  padding: 25px 25px;
+  margin-left: 25px;
+  margin-right: 50px;
+}
 
 
 
@@ -423,6 +467,26 @@ input[type=submit]:hover {
   html{
     margin: 0 200px;
   }
+
+  .console-game{
+    grid-template-areas:
+    "idee idee"
+    "samengevat samengevat"
+    "win-verlies win-verlies"
+    "rooms attributen"
+    "random random"
+    ;
+    grid-template-columns: auto auto;
+  }
+
+  .random{
+    margin: 0 auto;
+  }
+
+  .attributen{
+    margin-left: 25px;
+    margin-right: 50px;
+  }
 }
 
 @media screen and (max-width: 1300px) {
@@ -432,6 +496,32 @@ input[type=submit]:hover {
 
   html{
     margin: 0 100px;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .console-game{
+    grid-template-areas:
+    "idee"
+    "samengevat"
+    "win-verlies"
+    "rooms"
+    "attributen"
+    "random"
+    ;
+    grid-template-columns: auto;
+  }
+
+  .random{
+    margin: 0 0;
+  }
+
+  .attributen{
+    margin: 0 0;
+  }
+
+  .rooms{
+    margin: 0 0;
   }
 }
 
