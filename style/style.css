@@ -161,7 +161,6 @@ ul.breadcrumb {
   "photo info"
   "wieBenIk wieBenIk"
   "mijnWerk mijnWerk"
-  "cv cv"
   ;
   grid-template-columns: 160px auto;
 }
@@ -181,10 +180,6 @@ ul.breadcrumb {
 
 .mijnWerk{
   grid-area: mijnWerk;
-}
-
-.cv{
- grid-area: cv;
 }
 
 
