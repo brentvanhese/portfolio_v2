@@ -183,6 +183,64 @@ ul.breadcrumb {
 }
 
 
+/*Over mij*/
+.overMij{
+  display: grid;
+  grid-template-areas: 
+  "overMijTitel overMijTitel overMijTitel"
+  "watStudeerIk watStudeerIk sint-andries"
+  "meerInfo meerInfo meerInfo"
+  "OLVP voorGraduaat voorGraduaat"
+  "ambitie ambitie ambitie"
+  "cv cv cv"
+  ;
+
+  grid-template-columns: auto auto;
+}
+
+.overMijTitel{
+  grid-area: overMijTitel;
+}
+
+.watStudeerIk{
+  grid-area: watStudeerIk;
+}
+
+.sint-andries{
+  grid-area: sint-andries;
+  padding-left: 50px;
+}
+
+.sint-andries img{
+  width: 100%;
+}
+
+.meerInfo{
+  grid-area: meerInfo;
+}
+
+.olvp{
+  grid-area: OLVP;
+  padding-right: 50px;
+}
+
+.olvp img{
+  width: 100%;
+}
+
+.voorGraduaat{
+  grid-area: voorGraduaat;
+}
+
+.ambitie{
+  grid-area: ambitie;
+}
+
+.cv{
+  grid-area: cv;
+}
+
+
 
 /*contact*/
 
@@ -522,9 +580,50 @@ input[type=submit]:hover {
   }
 }
 
+@media screen and (max-width: 1000px){
+  .overMij{
+    grid-template-areas: 
+    "overMijTitel"
+    "watStudeerIk"
+    "sint-andries"
+    "meerInfo"
+    "voorGraduaat"
+    "OLVP"
+    "ambitie"
+    "cv"
+    ;
+  }
+
+  .sint-andries{
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .sint-andries img{
+    width: 75%;
+  }
+
+  .olvp{
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .olvp img{
+    width: 75%;
+  }
+}
+
 @media screen and (max-width: 700px){
   html{
     margin: 0 20px;
+  }
+
+  .sint-andries img{
+    width: 100%;
+  }
+
+  .olvp img{
+    width: 100%;
   }
 }
 
